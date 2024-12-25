@@ -3,7 +3,7 @@ const app = express()
 const cors = require("cors")
 const port = process.env.port || 5000
 const router = require("./router/auth_router")
-const errormiddleware = require("./errorMiddleWare/errorMiddleWare.js")
+// const errormiddleware = require("./errorMiddleWare/errorMiddleWare.js")
 
 require("./utils/db.js")
 const corsOptions = {
@@ -13,7 +13,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions))
 app.use(express.json());
-app.use(errormiddleware)
+// app.use(errormiddleware)
 app.use(router)
 
 app.listen(port,()=>{
