@@ -8,7 +8,6 @@ const fetchLocation = async(req,res)=>{
         console.log(error.message)
     }
 }
-
 const fetchBuilding = async(req,res)=>{
     try {
         const response = await building.find();
